@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Fill form on Colorlib</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Fill form on Colorlib</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Fill form on Colorlib</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m1.39s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Login on colorlib website and fill the form</td>
+<td class="success">54.613s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Login on colorlib website to verify requirement fields</td>
+<td class="success">6.773s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@regresion
+Scenario Outline: Login on colorlib website and fill the form ?[90m# src/test/resources/features/escenarios.feature:17?[0m
+  ?[32mGiven ?[0m?[32mI am on colorlibwebsite?[0m                               ?[90m# stepdefinitions.colorlibStepDefinition.i_am_on_colorlibwebsite()?[0m
+  ?[32mWhen ?[0m?[32mI login with my credentials and fill the form?[0m          ?[90m# stepdefinitions.colorlibStepDefinition.i_login_with_my_credentials_and_fill_the_form(io.cucumber.datatable.DataTable)?[0m
+    | userLogin | passwordLogin | required | email             | password | cpassword | date  | url                                                     | digits | range |
+    | demo      | demo          | prueba   | esierra@gmail.com | 53210    | 53210     | 34986 | https://colorlib.com/polygon/metis/form-validation.html | 123    | 11    |
+  ?[32mThen ?[0m?[32mI should see the title ?[0m?[32m?[1mPopup Validation?[0m                ?[90m# stepdefinitions.colorlibStepDefinition.i_should_see_the_field_required_empty(java.lang.String)?[0m
+
+@regresion
+Scenario Outline: Login on colorlib website to verify requirement fields ?[90m# src/test/resources/features/escenarios.feature:30?[0m
+  ?[32mGiven ?[0m?[32mI am on colorlibwebsite?[0m                                          ?[90m# stepdefinitions.colorlibStepDefinition.i_am_on_colorlibwebsite()?[0m
+  ?[32mWhen ?[0m?[32mI login with my credentials and send the empty form?[0m               ?[90m# stepdefinitions.colorlibStepDefinition.i_login_with_my_credentials_and_send_the_empty_form(io.cucumber.datatable.DataTable)?[0m
+    | userLogin | passwordLogin |
+    | demo      | demo          |
+  ?[32mThen ?[0m?[32mI should see the message ?[0m?[32m?[1mThis field is required.?[0m                  ?[90m# stepdefinitions.colorlibStepDefinition.i_should_see_the_message_this_field_is_required(java.lang.String)?[0m
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/esierrac/Documents/Cursos%20choucair/Automatizacion/colorlibAutomation/colorlibAutomation/src/test/resources/features/escenarios.feature
+Cleaning up unclosed ZipFile for archive C:\Users\esierrac\Documents\Cursos choucair\Automatizacion\colorlibAutomation\colorlibAutomation\.\src\test\resources\datadriven\data.xlsx
+Cleaning up unclosed ZipFile for archive C:\Users\esierrac\Documents\Cursos choucair\Automatizacion\colorlibAutomation\colorlibAutomation\.\src\test\resources\datadriven\data.xlsx
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Login on colorlib website and fill the form(fill-form-on-colorlib;login-on-colorlib-website-and-fill-the-form)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.DriverProvider - Using WebDriverManager configuration for firefox
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Reading https://api.github.com/repos/mozilla/geckodriver/releases to seek geckodriver
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - No proper driver found for geckodriver (latest version) ... seeking another version
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - No proper driver found for geckodriver (latest version) ... seeking another version
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\esierrac\.cache\selenium\geckodriver\win64\0.34.0-win\geckodriver.exe
+1707749300649	geckodriver	INFO	Listening on 127.0.0.1:65042
+1707749301542	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;58008&quot; &quot;--remote ... origins&quot; &quot;http://localhost:58008/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\esierrac\\AppData\\Local\\Temp\\rust_mozprofile5qNoJZ&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1707749301901	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1707749302000	Marionette	INFO	Listening on port 55968
+WebDriver BiDi listening on ws://127.0.0.1:58008
+Read port: 55968
+1707749302235	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58008/devtools/browser/b06a1d8f-71b2-45e0-9adc-4a19c72fdffb
+feb. 12, 2024 9:48:24 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+1707749332695	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://colorlib.com.&quot;
+console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://colorlib.com.&quot;
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Login on colorlib website and fill the form
+----------------------------------------------------------------------?[0m
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/esierrac/Documents/Cursos%20choucair/Automatizacion/colorlibAutomation/colorlibAutomation/src/test/resources/features/escenarios.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Login on colorlib website to verify requirement fields(fill-form-on-colorlib;login-on-colorlib-website-to-verify-requirement-fields)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Login on colorlib website to verify requirement fields
+----------------------------------------------------------------------?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at 12/02/2024, 9:49:26 a. m.</p>
+</div>
+</div>
+</body>
+</html>
