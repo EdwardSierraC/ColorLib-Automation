@@ -11,6 +11,7 @@ def credenciales=""
 
 pipeline {
     agent any
+	agent {label"${params.Nodo}"}
     stages {
         stage('Preparar Workspace'){
             steps{
