@@ -11,10 +11,10 @@ pipeline {
 
     stage('SonarQube analysis') {
         steps {
-            withSonarQubeEnv(installationName: 'Sonar 9.8.0.63668', credentialsId: 'jenkins-sonar') {
+            withSonarQubeEnv(installationName: 'MySonarQubeServer', credentialsId: 'colorlib-jenkins') {
               bat """
-              ./gradlew sonar \
-                    -Dsonar.projectKey=${"UserJenkins"} \
+              ./gradlew sonar-project \
+                    -Dsonar.projectKey=${"colorlib"} \
                     -Dsonar.host.url=${env.SONAR_HOST_URL} \
                     -Dsonar.login=${env.SONAR_AUTH_TOKEN} \
                     -Dsonar.projectName=${"BaseWebScreenPlay"} \
